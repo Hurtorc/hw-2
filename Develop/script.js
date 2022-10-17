@@ -37,19 +37,19 @@ function generatePassword() {
   // If statements to add what the user wants to the password
   var potentialChars = []
   if (useLowercase) {
-    potentialChars - potentialChars.concat(lowerCase)
+    potentialChars = potentialChars.concat(lowerCase)
   }
 
   if (useUppercase) {
-    potentialChars - potentialChars.concat(upperCase)
+    potentialChars = potentialChars.concat(upperCase)
   }
 
   if (useNumbers) {
-    potentialChars - potentialChars.concat(numbers)
+    potentialChars = potentialChars.concat(numbers)
   }
 
   if (useSpecialChars) {
-    potentialChars - potentialChars.concat(special)
+    potentialChars = potentialChars.concat(special)
   }
 
 
