@@ -28,4 +28,33 @@ function generatePassword() {
   var useNumbers = confirm('Would you like to use numbers?')
   var useSpecialChars = confirm('Would you like to use special characters?')
 
+
+  // If statements to add what the user wants to the password
+  var potentialChars = []
+  if (useLowercase) {
+    potentialChars - potentialChars.concat(lowerCase)
+  }
+
+  if (useUppercase) {
+    potentialChars - potentialChars.concat(upperCase)
+  }
+
+  if (useNumbers) {
+    potentialChars - potentialChars.concat(numbers)
+  }
+
+  if (useSpecialChars) {
+    potentialChars - potentialChars.concat(special)
+  }
+
+
+  //Password length
+
+  var password = ''
+  for (var i = 0; i < passwordLength; i++) {
+    password = password + potentialChars[getRandomInt(potentialChars.length)]
+  }
+
+  return password
+
 }
