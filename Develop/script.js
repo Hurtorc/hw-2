@@ -28,6 +28,12 @@ function getRandomInt(max) {
 // Password Generator
 function generatePassword() {
   var passwordLength = prompt('How long would you like your password? (8-128)', '12')
+
+  // if (passwordLength = parseInt() {
+  //   confirm('The length needs to be between 8 and 129')
+  //   return
+  // }
+
   var useUppercase = confirm('Would you like to use uppercase leeters?')
   var useLowercase = confirm('Would you like to use lowercase leeters?')
   var useNumbers = confirm('Would you like to use numbers?')
@@ -52,6 +58,8 @@ function generatePassword() {
     potentialChars = potentialChars.concat(special)
   }
 
+  //Code to require at least one character type
+
 
   //Password length
 
@@ -61,5 +69,10 @@ function generatePassword() {
   }
 
   return password
+
+}
+
+if (useLowercase, useUppercase, useNumbers, useSpecialChars, passwordLength = false) {
+  confirm('You must selcet at least one type of character')
 
 }
