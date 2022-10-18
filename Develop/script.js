@@ -29,10 +29,10 @@ function getRandomInt(max) {
 function generatePassword() {
   var passwordLength = prompt('How long would you like your password? (8-128)', '12')
 
-  // if (passwordLength = parseInt() {
-  //   confirm('The length needs to be between 8 and 129')
-  //   return
-  // }
+  if (passwordLength.length <= 8) {
+    confirm('the password must be within 8-128 characters') //need to somehow get this string to be recognized as numbers
+    return
+  }
 
   var useUppercase = confirm('Would you like to use uppercase leeters?')
   var useLowercase = confirm('Would you like to use lowercase leeters?')
