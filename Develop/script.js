@@ -62,22 +62,18 @@ function generatePassword() {
     potentialChars = potentialChars.concat(special)
   }
 
-  //Code to require at least one character type
-
-  if (useLowercase, useUppercase, useNumbers, useSpecialChars == false) {
-    confirm('You must selcet at least one type of character')
-    return
-  }
-
   //Password length
-
   var password = ''
   for (var i = 0; i < passwordLength; i++) {
     password = password + potentialChars[getRandomInt(potentialChars.length)]
   }
 
-
-  return password
-
+  //Code to require at least one character type
+  if (useLowercase, useUppercase, useNumbers, useSpecialChars == false) {
+    confirm('You must selcet at least one type of character')
+    return
+  } else {
+    return password
+  }
 }
 
