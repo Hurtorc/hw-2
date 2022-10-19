@@ -27,7 +27,7 @@ function getRandomInt(max) {
 
 // Password Generator
 function generatePassword() {
-  var passwordLength = prompt('How long would you like your password? (8-128)', '12')//get this string to be recognized as numbers
+  var passwordLength = prompt('How long would you like your password? (8-128)', '12')
   var length = parseInt(passwordLength)
   if (length <= 7) {
     confirm('The password must be within 8-128 characters')
@@ -69,7 +69,7 @@ function generatePassword() {
   }
 
   //Code to require at least one character type
-  if (useLowercase, useUppercase, useNumbers, useSpecialChars == false) {
+  if (useLowercase, useUppercase, useNumbers, useSpecialChars === false) {
     confirm('You must selcet at least one type of character')
     return
   } else {
